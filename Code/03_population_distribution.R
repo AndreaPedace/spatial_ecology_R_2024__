@@ -51,5 +51,9 @@ elev <- system.file("external/elevation.asc", package="sdm")
 elevmap <- vect(elev)
 
 #exercise
+colorRampPalette(c("oldlace", "paleturquoise", "grey", "orangered"))(100)
+cl<-colorRampPalette(c("oldlace", "paleturquoise", "grey", "orangered"))(100)
+plot(elevmap, col=cl)
+points(pres)
 
 
