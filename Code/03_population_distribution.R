@@ -27,3 +27,20 @@ pres <- rana[rana$Occurrence==1]
 par(mfrow=c(1,2))
 plot(rana)
 plot(pres)
+
+#exercise2
+abse <- rana[rana$Occurrence==0]
+plot(abse)
+
+#exercise3
+par(mfrow=c(1,2))
+plot(pres)
+plot(abse)
+
+#exercise4
+par(mfrow=c(2,1))
+plot(pres)
+plot(abse)
+
+#exercise5
+plot(pres, col="blue",abse, col="red")
