@@ -43,4 +43,13 @@ plot(pres)
 plot(abse)
 
 #exercise5
-plot(pres, col="blue",abse, col="red")
+plot(pres, col="blue")
+points(abse, col="red")
+
+#covariates
+elev <- system.file("external/elevation.asc", package="sdm")
+elevmap <- vect(elev)
+
+#exercise
+
+
