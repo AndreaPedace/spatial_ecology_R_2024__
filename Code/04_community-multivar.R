@@ -41,5 +41,6 @@ perc4=prop4*100
 #whole amount of variability (%)
 perc1+perc2
 
+#showing data
 plot(multivar)
 
