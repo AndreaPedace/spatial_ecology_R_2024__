@@ -12,6 +12,8 @@ install_github("ducciorocchini/imageRy")
 library(imageRy)
 
 #install the packages for Mac
+https://api.github.com/repos/ducciorocchini/imageRy/tarball/HEAD
+  
 install.packages("/Users/lea/Desktop/R/ducciorocchini-imageRy-a971c18.tar.gz",repos = NULL, type = "source")
 install.packages("dichromat")  
 install.packages("fields") 
