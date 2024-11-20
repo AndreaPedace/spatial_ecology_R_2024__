@@ -54,3 +54,21 @@ plot(b2, col=cl)
 #stack (unite the different images)
 sentstack<-(b2,b3,b4,b8)
 plot(sentstack, col=cl)
+
+#plot just one layer
+plot(sentstack[[1]],col=cl)
+
+# multiframe with different color palette for each band
+par(mfrow=c(2,2))
+clb <- colorRampPalette(c("darkblue", "blue", "light blue")) (100)
+plot(b2, col=clb)
+clv <- colorRampPalette(c("darkgreen", "green", "light green")) (100)
+plot(b3, col=clv)
+clr <- colorRampPalette(c("darkred", "red", "pink")) (100)
+plot(b4, col=clr)
+cln <- colorRampPalette(c("darkbrown", "orange", "yellow")) (100)
+plot(b8, col=cln)
+
+#rgb scheme to show images, plotting red green and blue
+im.plotRGB(sentstack, r=3, g=2, b=1) #natural color
+im.plotRGB(sentstack, r=4, g=3, b=2) #false color (infrared)
