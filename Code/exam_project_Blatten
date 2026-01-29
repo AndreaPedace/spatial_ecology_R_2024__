@@ -1,0 +1,25 @@
+#the main aim of this code is to provide an analysis of the landslide happened in Blatten (CH) in 28th of May 2025
+#After a brief visual analysis of the spatial changement produced by the landslide, we will proceed to a more specific analysises such as the condition of the River "Lonza" and a classification of the debris produced
+
+
+#installing packages needed, in particular terra and raster in order to manage spatial datasets
+install.packages("terra")
+install.packages("ggplots2")
+install.packages("raster")
+
+#importing the libraries 
+library(terra)
+library(raster)
+
+#setting a working directory to the main folder of the images 
+setwd("C:/Users/andre/Desktop/Blatten")
+
+#importing 4 images downloaded by the browser of the european satellite Sentinel-2
+#first image: Blatten area 18.05.2025
+Bl1 <-("18-05-2025_Sentinel-2_L1C_True_color.tiff")
+#second image: Blatten area 30.05.2025
+Bl2 <-("30-05-2025_Sentinel-2_L1C_True_color.tiff")
+#third image: Blatten area 20.09.2025
+Bl3 <-("20-09-2025_Sentinel-2_L1C_True_color.tiff")
+#fourth image: Blatten area 20.01.2026
+Bl4 <-("20-01-2026_Sentinel-2_L1C_True_color.tiff")
