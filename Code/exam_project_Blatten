@@ -16,10 +16,19 @@ setwd("C:/Users/andre/Desktop/Blatten")
 
 #importing 4 images downloaded by the browser of the european satellite Sentinel-2
 #first image: Blatten area 18.05.2025
-Bl1 <-("18-05-2025_Sentinel-2_L1C_True_color.tiff")
+Bl1 <-rast("18-05-2025_Sentinel-2_L1C_True_color.tiff")
+plotRGB(Bl1, r=1, g=2, b=3, stretch="lin")
 #second image: Blatten area 30.05.2025
-Bl2 <-("30-05-2025_Sentinel-2_L1C_True_color.tiff")
+Bl2 <-rast("30-05-2025_Sentinel-2_L1C_True_color.tiff")
+plotRGB(Bl2, r=1, g=2, b=3, stretch="lin")
 #third image: Blatten area 20.09.2025
-Bl3 <-("20-09-2025_Sentinel-2_L1C_True_color.tiff")
+Bl3 <-rast("20-09-2025_Sentinel-2_L1C_True_color.tiff")
+plotRGB(Bl3, r=1, g=2, b=3, stretch="lin")
 #fourth image: Blatten area 20.01.2026
-Bl4 <-("20-01-2026_Sentinel-2_L1C_True_color.tiff")
+Bl4 <-rast("20-01-2026_Sentinel-2_L1C_True_color.tiff")
+plotRGB(Bl4, r=1, g=2, b=3, stretch="lin")
+
+#showing the image of before and after the landslide 
+par(mfrow=c(2,1))
+plotRGB(Bl1, r=1, g=2, b=3, stretch="lin")
+plotRGB(Bl2, r=1, g=2, b=3, stretch="lin")
