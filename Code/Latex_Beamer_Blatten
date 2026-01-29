@@ -1,0 +1,17 @@
+\documentclass{beamer}
+\usetheme{CambridgeUS}
+\title{The Blatten Landslide of the 28th of May 2025}
+\author{Andrea Pedace}
+\institute{Spatial Ecology in R - Unibo}
+\date{2026}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+\frametitle{A bit of Geography}
+First lets understand where we are...
+\end{frame}
+
+\end{document}
