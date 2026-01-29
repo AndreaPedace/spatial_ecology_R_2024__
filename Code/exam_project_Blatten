@@ -28,7 +28,7 @@ plotRGB(Bl3, r=1, g=2, b=3, stretch="lin")
 Bl4 <-rast("20-01-2026_Sentinel-2_L1C_True_color.tiff")
 plotRGB(Bl4, r=1, g=2, b=3, stretch="lin")
 
-#showing the image of before and after the landslide 
+#showing the image before and after the landslide 
 par(mfrow=c(2,1))
 plotRGB(Bl1, r=1, g=2, b=3, stretch="lin")
 plotRGB(Bl2, r=1, g=2, b=3, stretch="lin")
