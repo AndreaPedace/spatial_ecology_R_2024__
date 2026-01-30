@@ -14,7 +14,7 @@ library(raster)
 #setting a working directory to the main folder of the images 
 setwd("C:/Users/andre/Desktop/Blatten")
 
-#importing 4 images downloaded by the browser of the european satellite Sentinel-2
+#importing 4 images downloaded by the browser of the european satellite Sentinel-2 (True Color)
 #first image: Blatten area 18.05.2025
 Bl1 <-rast("18-05-2025_Sentinel-2_L1C_True_color.tiff")
 plotRGB(Bl1, r=1, g=2, b=3, stretch="lin")
@@ -28,7 +28,33 @@ plotRGB(Bl3, r=1, g=2, b=3, stretch="lin")
 Bl4 <-rast("20-01-2026_Sentinel-2_L1C_True_color.tiff")
 plotRGB(Bl4, r=1, g=2, b=3, stretch="lin")
 
-#showing the image before and after the landslide 
+#importing 4 images downloaded by the browser of the european satellite Sentinel-2 (False Color)
+#first image: Blatten area 18.05.2025
+Bl1FC <-rast("2025-05-18_Sentinel-2_L1C_False_color.tiff")
+#second image: Blatten area 30.05.2025
+Bl2FC <-rast("2025-05-30_Sentinel-2_L1C_False_color.tiff")
+#third image: Blatten area 20.09.2025
+Bl3FC <-rast("2025-09-20_Sentinel-2_L1C_False_color.tiff")
+#fourth image: Blatten area 20.01.2026
+Bl4FC <-rast("2026-01-20_Sentinel-2_L1C_False_color.tiff")
+
+#importing 3 images downloaded by the browser of the european satellite Sentinel-2 (NDVI)
+#first image: Blatten area 18.05.2025
+Bl1NDVI <-rast("2025-05-18_Sentinel-2_L1C_NDVI.tiff")
+#second image: Blatten area 30.05.2025
+Bl2NDVI <-rast("2025-05-30_Sentinel-2_L1C_NDVI.tiff")
+#third image: Blatten area 20.09.2025
+Bl3NDVI <-rast("2025-09-20_Sentinel-2_L1C_NDVI.tiff")
+
+#importing 3 images downloaded by the browser of the european satellite Sentinel-2 (NDWI)
+#first image: Blatten area 18.05.2025
+Bl1NDWI <-rast("2025-05-18_Sentinel-2_L1C_NDWI.tiff")
+#second image: Blatten area 30.05.2025
+Bl2NDWI <-rast("2025-05-30_Sentinel-2_L1C_NDWI.tiff")
+#third image: Blatten area 20.09.2025
+Bl3NDWI <-rast("2025-09-20_Sentinel-2_L1C_NDWI.tiff")
+
+#showing the image of before and after the landslide 
 par(mfrow=c(2,1))
 plotRGB(Bl1, r=1, g=2, b=3, stretch="lin")
 plotRGB(Bl2, r=1, g=2, b=3, stretch="lin")
