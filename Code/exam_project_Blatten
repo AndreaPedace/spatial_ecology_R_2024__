@@ -71,3 +71,22 @@ plotRGB(Bl1, r=1, g=2, b=3, stretch="lin")
 plotRGB(Bl2, r=1, g=2, b=3, stretch="lin")
 plotRGB(Bl3, r=1, g=2, b=3, stretch="lin")
 plotRGB(Bl4, r=1, g=2, b=3, stretch="lin")
+
+#showing the image of before and after the landslide in false color
+par(mfrow=c(2,2))
+plot(Bl1FC)
+plot(Bl2FC)
+plot(Bl3FC)
+plot(Bl4FC)
+
+#showing the image of before and after the landslide in NDVI
+par(mfrow=c(3,1))
+plot(Bl1NDVI)
+plot(Bl2NDVI)
+plot(Bl3NDVI)
+
+#showing the image of before and after the landslide in NDWI
+par(mfrow=c(3,1))
+plot(Bl1NDWI)
+plot(Bl2NDWI)
+plot(Bl3NDWI)
