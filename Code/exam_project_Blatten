@@ -11,6 +11,7 @@ install.packages("raster")
 library(terra)
 library(raster)
 
+#Importing datasets of images in order to perform the analysis
 #setting a working directory to the main folder of the images 
 setwd("C:/Users/andre/Desktop/Blatten")
 
@@ -64,7 +65,9 @@ plot(Bl2NDWI)
 Bl3NDWI <-rast("2025-09-20_Sentinel-2_L1C_NDWI.tiff")
 plot(Bl3NDWI)
 
-#showing the image of before and after the landslide 
-par(mfrow=c(2,1))
+#showing the image of before and after the landslide in true color
+par(mfrow=c(2,2))
 plotRGB(Bl1, r=1, g=2, b=3, stretch="lin")
 plotRGB(Bl2, r=1, g=2, b=3, stretch="lin")
+plotRGB(Bl3, r=1, g=2, b=3, stretch="lin")
+plotRGB(Bl4, r=1, g=2, b=3, stretch="lin")
