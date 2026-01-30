@@ -108,7 +108,7 @@ dev.off()
 #classification 1 frequency (number of pixels for each classes)
 freq1 <- freq(class1)
 freq1
-#class1 histogram of classes and pixels
+#class1 histogram the frequency
 barplot(freq1$count,
         names.arg = freq1$value,
         col = "grey",
@@ -116,10 +116,10 @@ barplot(freq1$count,
         xlab = "Class",
         ylab = "Number of pixels")
 
-#classification 2 frequency
+#classification 2 frequency (number of pixels for each classes)
 freq2 <- freq(class2)
 freq2
-#class2 histogram of classes and pixels
+#class2 histogram of the frequency
 barplot(freq2$count,
         names.arg = freq2$value,
         col = "grey",
@@ -127,10 +127,10 @@ barplot(freq2$count,
         xlab = "Class",
         ylab = "Number of pixels")
 
-#classification 3 frequency
+#classification 3 frequency (number of pixels for each classes)
 freq3 <- freq(class3)
 freq3
-#class3 histogram of classes and pixels
+#class3 histogram of the frequency
 barplot(freq3$count,
         names.arg = freq3$value,
         col = "grey",
