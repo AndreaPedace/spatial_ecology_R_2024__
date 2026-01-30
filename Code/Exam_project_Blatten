@@ -99,7 +99,7 @@ class3 <- im.classify(Bl3, num_clusters=4) #Image True color 20.09.25
 
 #plotting classifications in order to better visualize them 
 par(mfrow=c(2,2))
-plot(class1)
-plot(class2)
-plot(class3)
+plot(class1, main="18.05.25")
+plot(class2, main="30.05.25")
+plot(class3, main="20.09.25")
 dev.off()
