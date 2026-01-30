@@ -1,15 +1,8 @@
 #the main aim of this code is to provide an analysis of the landslide happened in Blatten (CH) in 28th of May 2025
 #After a brief visual analysis of the spatial changement produced by the landslide, we will proceed to a more specific analysises such as the condition of the River "Lonza" and a classification of the debris produced
 
-
-#installing packages needed, in particular terra and raster in order to manage spatial datasets
-install.packages("terra")
-install.packages("ggplots2")
-install.packages("raster")
-
 #importing the libraries 
 library(terra)
-library(raster)
 
 #Importing datasets of images in order to perform the analysis
 #setting a working directory to the main folder of the images 
@@ -43,6 +36,7 @@ plot(Bl3FC)
 Bl4FC <-rast("2026-01-20_Sentinel-2_L1C_False_color.tiff")
 plot(Bl4FC)
 
+#The images in NDVI and NDWI are just 3 for a specific reason: in winter the amount of snow fallen made useless this combination of bands for the image of the 20th of January
 #importing 3 images downloaded by the browser of the european satellite Sentinel-2 (NDVI)
 #first image: Blatten area 18.05.2025
 Bl1NDVI <-rast("2025-05-18_Sentinel-2_L1C_NDVI.tiff")
@@ -71,6 +65,7 @@ plotRGB(Bl1, r=1, g=2, b=3, stretch="lin")
 plotRGB(Bl2, r=1, g=2, b=3, stretch="lin")
 plotRGB(Bl3, r=1, g=2, b=3, stretch="lin")
 plotRGB(Bl4, r=1, g=2, b=3, stretch="lin")
+dev.off()
 
 #showing the image of before and after the landslide in false color
 par(mfrow=c(2,2))
@@ -78,15 +73,19 @@ plot(Bl1FC)
 plot(Bl2FC)
 plot(Bl3FC)
 plot(Bl4FC)
+dev.off()
 
 #showing the image of before and after the landslide in NDVI
 par(mfrow=c(3,1))
 plot(Bl1NDVI)
 plot(Bl2NDVI)
 plot(Bl3NDVI)
+dev.off()
 
 #showing the image of before and after the landslide in NDWI
 par(mfrow=c(3,1))
 plot(Bl1NDWI)
 plot(Bl2NDWI)
 plot(Bl3NDWI)
+dev.off()
+
