@@ -3,6 +3,7 @@
 
 #importing the libraries 
 library(terra)
+library(imageRy)
 
 #Importing datasets of images in order to perform the analysis
 #setting a working directory to the main folder of the images 
@@ -59,6 +60,7 @@ plot(Bl2NDWI)
 Bl3NDWI <-rast("2025-09-20_Sentinel-2_L1C_NDWI.tiff")
 plot(Bl3NDWI)
 
+#The choice of True Color, False Color, NDVI and NDWI is made in order to provide the best visualization of the landslide the surface water and the debris
 #showing the image of before and after the landslide in true color
 par(mfrow=c(2,2))
 plotRGB(Bl1, r=1, g=2, b=3, stretch="lin")
@@ -75,17 +77,28 @@ plot(Bl3FC)
 plot(Bl4FC)
 dev.off()
 
-#showing the image of before and after the landslide in NDVI
+#showing the image of before and after the landslide in NDVI (debris)
 par(mfrow=c(3,1))
 plot(Bl1NDVI)
 plot(Bl2NDVI)
 plot(Bl3NDVI)
 dev.off()
 
-#showing the image of before and after the landslide in NDWI
+#showing the image of before and after the landslide in NDWI (surface water)
 par(mfrow=c(3,1))
 plot(Bl1NDWI)
 plot(Bl2NDWI)
 plot(Bl3NDWI)
 dev.off()
 
+#using the library imageRy it has been done an unsupervised classification in order to acquire possible new data on the first 3 images in true colors
+class1 <- im.classify(Bl1, num_clusters=4) #Image True color 18.05.25
+class2 <- im.classify(Bl2, num_clusters=4) #Image True color 30.05.25
+class3 <- im.classify(Bl3, num_clusters=4) #Image True color 20.09.25
+
+#plotting classifications in order to better visualize them 
+par(mfrow=c(2,2))
+plot(class1)
+plot(class2)
+plot(class3)
+dev.off()
