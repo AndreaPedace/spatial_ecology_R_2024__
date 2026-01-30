@@ -92,6 +92,7 @@ plot(Bl3NDWI)
 dev.off()
 
 #using the library imageRy it has been done an unsupervised classification in order to acquire possible new data on the first 3 images in true colors
+#the resulting clusters represent spectrally homogeneous groups of pixels and were used to evaluate changes in surface composition induced by the landslide.
 class1 <- im.classify(Bl1, num_clusters=4) #Image True color 18.05.25
 class2 <- im.classify(Bl2, num_clusters=4) #Image True color 30.05.25
 class3 <- im.classify(Bl3, num_clusters=4) #Image True color 20.09.25
