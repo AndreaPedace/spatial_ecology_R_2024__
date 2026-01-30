@@ -91,7 +91,7 @@ plot(Bl2NDWI)
 plot(Bl3NDWI)
 dev.off()
 
-#using the library imageRy it has been done an unsupervised classification in order to acquire possible new data on the first 3 images in true colors
+#using the library imageRy it has been done an unsupervised classification (k-means method) in order to acquire possible new data on the first 3 images in true colors
 #the resulting clusters represent spectrally homogeneous groups of pixels and were used to evaluate changes in surface composition induced by the landslide.
 class1 <- im.classify(Bl1, num_clusters=4) #Image True color 18.05.25
 class2 <- im.classify(Bl2, num_clusters=4) #Image True color 30.05.25
@@ -105,7 +105,7 @@ plot(class3, main="20.09.25")
 dev.off()
 
 #calculation of number of pixels for each classes in each classifications
-#class1 frequency
+#classification 1 frequency (number of pixels for each classes)
 freq1 <- freq(class1)
 freq1
 #class1 histogram of classes and pixels
@@ -116,7 +116,7 @@ barplot(freq1$count,
         xlab = "Class",
         ylab = "Number of pixels")
 
-#class2 frequency
+#classification 2 frequency
 freq2 <- freq(class2)
 freq2
 #class2 histogram of classes and pixels
@@ -127,10 +127,10 @@ barplot(freq2$count,
         xlab = "Class",
         ylab = "Number of pixels")
 
-#class3 frequency
+#classification 3 frequency
 freq3 <- freq(class3)
 freq3
-#class2 histogram of classes and pixels
+#class3 histogram of classes and pixels
 barplot(freq3$count,
         names.arg = freq3$value,
         col = "grey",
