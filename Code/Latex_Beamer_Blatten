@@ -19,7 +19,13 @@
 
 \begin{frame}
 \frametitle{Research topic}
-To use tools and functions of RStudio in order to analyze and give a small report of the landslide that happened in Blatten on 28 May 2025
+\begin{justify}
+To use tools and functions of R in particular \textbf{RStudio} in order to analyze and give a small report of the landslide that happened in Blatten on 28 May 2025  
+\end{justify}
+\begin{image}
+     \centering
+      \includegraphics[width=\linewidth]{figures/R_image.jpg}
+\end{image}
 \end{frame}
 
 \section{Background}
@@ -53,21 +59,32 @@ To use tools and functions of RStudio in order to analyze and give a small repor
 
 \begin{frame}
 \frametitle{Metodology}
-The images had been downloaded through the ESA Copernicus Browser and the source is the satellite Sentinel-2 L1C
+\begin{justify}
+The images had been downloaded through the ESA Copernicus Browser and the source is the satellite \textbf{ Sentinel-2 L1C}\\
+The analisys has been conducted on 4 images taken in these dates (the selection of the images it has been based on a cloud percentage of 17): 
+\end{justify}
+\begin{itemize}
+    \item 18th May 2025
+    \item 30th May 2025
+    \item 20th September 2025
+    \item 20th January 2026   
+\end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Metodology}
-The selection of the bands used is based on the best combination in order to highlight certain features of the landslide\\
+        The selection of the bands used is based on the best combinations in order to highlight certain features of the landslide\\
 
 \begin{itemize}
-    \item True color: per evidenziare le dimensioni naturali del fenomeno visibili ad occhio nudo
+    \item True color:
     \item False color:
     \item NDVI:
     \item NDWI:
 \end{itemize}
-
-
+   \centering
+      \includegraphics[width=\linewidth,
+  height=0.4\textheight,
+  keepaspectratio]{figures/spettro.png} 
 \end{frame}
 \section{Results}
 
@@ -161,8 +178,7 @@ The selection of the bands used is based on the best combination in order to hig
 \frametitle{Unsupervised classification - K-means}
  
  \begin{image}
-     \centering     
-     \includegraphics[width=\linewidth,height=0.9\textheight, keepaspectratio]{figures/classificazione.jpg}
+     \centering     \includegraphics[width=\linewidth,height=0.9\textheight, keepaspectratio]{figures/classificazione.jpg}
      
  \end{image}
 \end{frame}
