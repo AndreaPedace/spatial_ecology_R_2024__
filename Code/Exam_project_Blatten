@@ -105,9 +105,11 @@ plot(class3, main="20.09.25")
 dev.off()
 
 #calculation of number of pixels for each classes in each classifications
+
 #classification 1 frequency (number of pixels for each classes)
 freq1 <- freq(class1)
 freq1
+
 #class1 histogram the frequency
 barplot(freq1$count,
         names.arg = freq1$value,
@@ -119,6 +121,7 @@ barplot(freq1$count,
 #classification 2 frequency (number of pixels for each classes)
 freq2 <- freq(class2)
 freq2
+
 #class2 histogram of the frequency
 barplot(freq2$count,
         names.arg = freq2$value,
@@ -130,6 +133,7 @@ barplot(freq2$count,
 #classification 3 frequency (number of pixels for each classes)
 freq3 <- freq(class3)
 freq3
+
 #class3 histogram of the frequency
 barplot(freq3$count,
         names.arg = freq3$value,
@@ -137,3 +141,4 @@ barplot(freq3$count,
         main = "Class distribution – 20-09-2025",
         xlab = "Class",
         ylab = "Number of pixels")
+       
