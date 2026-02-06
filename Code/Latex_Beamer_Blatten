@@ -53,7 +53,7 @@ To use tools and functions of RStudio in order to analyze and give a small repor
 
 \begin{frame}
 \frametitle{Metodology}
-The images had been downloaded through the ESA Copernicus Browser and the source is the satellite Sentinel-2 L2C1 
+The images had been downloaded through the ESA Copernicus Browser and the source is the satellite Sentinel-2 L1C
 \end{frame}
 
 \begin{frame}
@@ -76,20 +76,20 @@ The selection of the bands used is based on the best combination in order to hig
  \begin{columns}
      \begin{column}{0.48\textwidth}
       \centering
-      \includegraphics[width=\linewidth]{figures/blatten_original.jpg}
+      \includegraphics[width=\linewidth]{figures/True color/18-05-2025_Sentinel-2_L1C_True_color.jpg}
 
       \vspace{0.5em}
 
-      \includegraphics[width=\linewidth]{figures/svizzera.png}
+      \includegraphics[width=\linewidth]{figures/True color/30-05-2025_Sentinel-2_L1C_True_color.jpg}
     \end{column}
 
     \begin{column}{0.48\textwidth}
       \centering
-      \includegraphics[width=\linewidth]{figures/blatten_original.jpg}
+      \includegraphics[width=\linewidth]{figures/True color/20-09-2025_Sentinel-2_L1C_True_color.jpg}
 
       \vspace{0.5em}
 
-      \includegraphics[width=\linewidth]{figures/svizzera.png}
+      \includegraphics[width=\linewidth]{figures/True color/20-01-2026_Sentinel-2_L1C_True_color.jpg}
     \end{column}
   \end{columns}
 \end{frame}
@@ -99,20 +99,20 @@ The selection of the bands used is based on the best combination in order to hig
  \begin{columns}
      \begin{column}{0.48\textwidth}
       \centering
-      \includegraphics[width=\linewidth]{figures/blatten_original.jpg}
+      \includegraphics[width=\linewidth]{figures/False color/2025-05-18_Sentinel-2_L1C_False_color.jpg}
 
       \vspace{0.5em}
 
-      \includegraphics[width=\linewidth]{figures/svizzera.png}
+      \includegraphics[width=\linewidth]{figures/False color/2025-05-30_Sentinel-2_L1C_False_color.jpg}
     \end{column}
 
     \begin{column}{0.48\textwidth}
       \centering
-      \includegraphics[width=\linewidth]{figures/blatten_original.jpg}
+      \includegraphics[width=\linewidth]{figures/False color/2025-09-20_Sentinel-2_L1C_False_color.jpg}
 
       \vspace{0.5em}
 
-      \includegraphics[width=\linewidth]{figures/svizzera.png}
+      \includegraphics[width=\linewidth]{figures/False color/2026-01-20_Sentinel-2_L1C_False_color.jpg}
     \end{column}
   \end{columns}
 \end{frame}
@@ -122,20 +122,17 @@ The selection of the bands used is based on the best combination in order to hig
    \begin{columns}
      \begin{column}{0.5\textwidth}
       \centering
-      \includegraphics[width=\linewidth]{figures/blatten_original.jpg}
+      \includegraphics[width=\linewidth]{figures/NDWI/2025-05-18_Sentinel-2_L1C_NDWI.jpg}
 
        \vspace{0.5em}
 
-      \includegraphics[width=\linewidth]{figures/svizzera.png}
+      \includegraphics[width=\linewidth]{figures/NDWI/2025-05-30_Sentinel-2_L1C_NDWI.jpg}
     \end{column}
 
     \begin{column}{0.5\textwidth}
       \centering
-      \includegraphics[width=\linewidth]{figures/blatten_original.jpg}
+      \includegraphics[width=\linewidth]{figures/NDWI/2025-09-20_Sentinel-2_L1C_NDWI.jpg}
 
-      \vspace{0.5em}
-
-      \includegraphics[width=\linewidth]{figures/svizzera.png}
     \end{column}
   \end{columns}
 \end{frame}
@@ -143,6 +140,26 @@ The selection of the bands used is based on the best combination in order to hig
 \begin{frame}
 \frametitle{Debris condition}
   \begin{columns}
+     \begin{column}{0.48\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{figures/NDVI/2025-05-18_Sentinel-2_L1C_NDVI.jpg}
+
+      \vspace{0.5em}
+
+      \includegraphics[width=\linewidth]{figures/NDVI/2025-05-30_Sentinel-2_L1C_NDVI.jpg}
+    \end{column}
+
+    \begin{column}{0.48\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{figures/NDVI/2025-09-20_Sentinel-2_L1C_NDVI.jpg}
+
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Unsupervised classification - K-means}
+ \begin{columns}
      \begin{column}{0.48\textwidth}
       \centering
       \includegraphics[width=\linewidth]{figures/blatten_original.jpg}
