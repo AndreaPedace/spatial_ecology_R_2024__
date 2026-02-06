@@ -156,28 +156,14 @@ The selection of the bands used is based on the best combination in order to hig
     \end{column}
   \end{columns}
 \end{frame}
-
+  
 \begin{frame}
 \frametitle{Unsupervised classification - K-means}
- \begin{columns}
-     \begin{column}{0.48\textwidth}
-      \centering
-      \includegraphics[width=\linewidth]{figures/blatten_original.jpg}
-
-      \vspace{0.5em}
-
-      \includegraphics[width=\linewidth]{figures/svizzera.png}
-    \end{column}
-
-    \begin{column}{0.48\textwidth}
-      \centering
-      \includegraphics[width=\linewidth]{figures/blatten_original.jpg}
-
-      \vspace{0.5em}
-
-      \includegraphics[width=\linewidth]{figures/svizzera.png}
-    \end{column}
-  \end{columns}
+ 
+ \begin{image}
+     \centering     \includegraphics[width=\linewidth,height=0.9\textheight, keepaspectratio]{figures/classificazione.jpg}
+     
+ \end{image}
 \end{frame}
 
 \begin{frame}
