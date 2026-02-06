@@ -1,6 +1,10 @@
 \documentclass{beamer}
+
+\usepackage{caption}
+
 \usetheme{Copenhagen}
 \usecolortheme{beaver}
+
 \title{The Landslide of Blatten\\28th of May 2025}
 \author{Andrea Pedace}
 \institute{University of Bologna - Spatial Ecology in R}
@@ -87,6 +91,15 @@ The analisys has been conducted on 4 images taken in these dates (the selection 
   keepaspectratio]{figures/spettro.png} 
 \end{frame}
 \section{Results}
+
+\begin{frame}
+\frametitle{Metodology}
+    \begin{justify}
+Finally, an unsupervised classification was carried out using the \textbf{K-means} algorithm, resulting in 4 clusters
+    \end{justify}
+    \centering
+    \includegraphics[width=\linewidth, height=0.6\textheight, keepaspectratio]{figures/k means 2.png} 
+\end{frame}
 
 \begin{frame}
 \frametitle{True Color}
@@ -189,4 +202,3 @@ Thank you for your attention
 \end{frame}
 
 \end{document}
-
