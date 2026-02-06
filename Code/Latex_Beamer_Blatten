@@ -191,14 +191,33 @@ Finally, an unsupervised classification was carried out using the \textbf{K-mean
 \frametitle{Unsupervised classification - K-means}
  
  \begin{image}
-     \centering     \includegraphics[width=\linewidth,height=0.9\textheight, keepaspectratio]{figures/classificazione.jpg}
+     \centering
+     \includegraphics[width=\linewidth,height=0.9\textheight, keepaspectratio]{figures/classificazione.jpg}
      
  \end{image}
 \end{frame}
 
 \begin{frame}
-\frametitle{}
-Thank you for your attention
+\frametitle{Actual situation}
+\begin{columns}
+    \begin{column}{0.5\textwidth}
+         \centering
+         \includegraphics[width=\linewidth, keepaspectratio]{figures/protezione.jpeg}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+        The Swiss Civil Protection promptly evacuated Blatten before the disaster occurred; unfortunately, 90\% of the village was destroyed by the landslide, and no short-term measures can be taken to allow the 300 residents to return home.
+    \end{column}
+\end{columns}
 \end{frame}
+
+\begin{frame}
+\frametitle{Actual situation}
+\begin{image}
+     \centering
+     \includegraphics[width=\linewidth,height=\textheight, keepaspectratio]{figures/blatten_oggi.png}
+ \end{image}
+\end{frame}
+
+\end{document}
 
 \end{document}
