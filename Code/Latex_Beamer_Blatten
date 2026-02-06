@@ -23,14 +23,27 @@ To use tools and functions of RStudio in order to analize and give a small repor
 \section{Background}
 
 \begin{frame}
-\frametitle{Geographical background}
-\begin{itemize}
-    \item Blatten
-    \item Valais, Switzerland
-    \item Population: 303
-    \item Located in the valley of Lötschental
-\end{itemize}
+\frametitle{Geographical Background}
+  \begin{columns}
+    
+    \column{0.5\textwidth}
+      \begin{itemize}
+        \item Blatten
+        \item Valais, Switzerland
+        \item Population: 303
+        \item Located in the valley of Lötschental
+      \end{itemize}
 
+   
+    \column{0.5\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{figures/blatten_original.jpg}
+
+      \vspace{0.5em}
+
+      \includegraphics[width=\linewidth]{figures/svizzera.png}
+
+  \end{columns}
 \end{frame}
 
 \section{Metodology}
@@ -44,22 +57,14 @@ The images had been downloaded through the Copernicus Browser of the ESA and the
 
 \begin{frame}
 \frametitle{Metodology}
-The selection of the bands used it is based on the best combination in order to highlight certain features of the landslide
+The selection of the bands used it is based on the best combination in order to highlight certain features of the landslide\\
 
-\begin{columns}
-    \begin{column}{0.25\textwidth}
-       True color: 
-    \end{column}
-     \begin{column}{0.25\textwidth}
-       False Color:
-    \end{column}
-     \begin{column}{0.25\textwidth}
-       NDVI:
-    \end{column}
-     \begin{column}{0.25\textwidth}
-       NDWI: 
-    \end{column}
-\end{columns}
+\begin{itemize}
+    \item True color: per evidenziare le dimensioni naturali del fenomeno visibili ad occhio nudo
+    \item False color:
+    \item NDVI:
+    \item NDWI:
+\end{itemize}
 
 
 \end{frame}
@@ -76,3 +81,4 @@ Thank you for your attention
 \end{frame}
 
 \end{document}
+
