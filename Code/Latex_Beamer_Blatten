@@ -161,7 +161,8 @@ The selection of the bands used is based on the best combination in order to hig
 \frametitle{Unsupervised classification - K-means}
  
  \begin{image}
-     \centering     \includegraphics[width=\linewidth,height=0.9\textheight, keepaspectratio]{figures/classificazione.jpg}
+     \centering     
+     \includegraphics[width=\linewidth,height=0.9\textheight, keepaspectratio]{figures/classificazione.jpg}
      
  \end{image}
 \end{frame}
