@@ -1,17 +1,78 @@
 \documentclass{beamer}
-\usetheme{CambridgeUS}
-\title{The Blatten Landslide of the 28th of May 2025}
+\usetheme{Copenhagen}
+\usecolortheme{beaver}
+\title{The Landslide of Blatten the 28th of May 2025}
 \author{Andrea Pedace}
-\institute{Spatial Ecology in R - Unibo}
-\date{2026}
+\institute{University of Bologna - Spatial Ecology in R}
+\date{February 2026}
 
 \begin{document}
 
 \frame{\titlepage}
 
 \begin{frame}
-\frametitle{A bit of Geography}
-First lets understand where we are...
+\tableofcontents
+\frametitle{Table of contents}
+\end{frame}
+
+\begin{frame}
+\frametitle{Research topic}
+To use tools and functions of RStudio in order to analize and give a small report of the landslide happened in Blatten the 28th of May 2025
+\end{frame}
+
+\section{Background}
+
+\begin{frame}
+\frametitle{Geographical background}
+\begin{itemize}
+    \item Blatten
+    \item Valais, Switzerland
+    \item Population: 303
+    \item Located in the valley of Lötschental
+\end{itemize}
+
+\end{frame}
+
+\section{Metodology}
+
+\begin{frame}
+\frametitle{Metodology}
+The images had been downloaded through the Copernicus Browser of the ESA and the source is the satellite Sentinel-2 L2C1 
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Metodology}
+The selection of the bands used it is based on the best combination in order to highlight certain features of the landslide
+
+\begin{columns}
+    \begin{column}{0.25\textwidth}
+       True color: 
+    \end{column}
+     \begin{column}{0.25\textwidth}
+       False Color:
+    \end{column}
+     \begin{column}{0.25\textwidth}
+       NDVI:
+    \end{column}
+     \begin{column}{0.25\textwidth}
+       NDWI: 
+    \end{column}
+\end{columns}
+
+
+\end{frame}
+\section{Results}
+
+\begin{frame}
+\frametitle{Results}
+Blatten is a Swiss town, of 303 inhabitants located in the South of Switzerland in the Canton of Valais. 
+\end{frame}
+
+\begin{frame}
+\frametitle{}
+Thank you for your attention
 \end{frame}
 
 \end{document}
