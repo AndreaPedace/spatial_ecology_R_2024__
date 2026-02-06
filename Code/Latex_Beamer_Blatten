@@ -76,10 +76,10 @@ The analisys has been conducted on 4 images taken in these dates (the selection 
         The selection of the bands used is based on the best combinations in order to highlight certain features of the landslide\\
 
 \begin{itemize}
-    \item True color:
-    \item False color:
-    \item NDVI:
-    \item NDWI:
+    \item True color
+    \item False color
+    \item NDVI (Normalized Difference Vegetation Index)
+    \item NDWI (Normalized Difference Water Index)
 \end{itemize}
    \centering
       \includegraphics[width=\linewidth,
@@ -189,3 +189,4 @@ Thank you for your attention
 \end{frame}
 
 \end{document}
+
