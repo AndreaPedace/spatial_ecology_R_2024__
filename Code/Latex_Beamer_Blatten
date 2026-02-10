@@ -186,12 +186,23 @@ Finally, an unsupervised classification was carried out using the \textbf{K-mean
     \end{column}
   \end{columns}
 \end{frame}
+
+\begin{frame}
+\frametitle{Unsupervised classification - K-means}
+ 
+ \begin{image}
+     \centering   
+     \includegraphics[width=\linewidth,height=0.9\textheight, keepaspectratio]{Differences.png}
+     
+ \end{image}
+\end{frame}
+
   
 \begin{frame}
 \frametitle{Unsupervised classification - K-means}
  
  \begin{image}
-     \centering
+     \centering     
      \includegraphics[width=\linewidth,height=0.9\textheight, keepaspectratio]{figures/classificazione.jpg}
      
  \end{image}
@@ -213,10 +224,13 @@ Finally, an unsupervised classification was carried out using the \textbf{K-mean
 \begin{frame}
 \frametitle{Actual situation}
 \begin{image}
-     \centering
+     \centering   
      \includegraphics[width=\linewidth,height=\textheight, keepaspectratio]{figures/blatten_oggi.png}
  \end{image}
 \end{frame}
+
+\end{document}
+
 
 \end{document}
 
