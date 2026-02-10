@@ -188,7 +188,7 @@ Finally, an unsupervised classification was carried out using the \textbf{K-mean
 \end{frame}
 
 \begin{frame}
-\frametitle{Unsupervised classification - K-means}
+\frametitle{Differences about NDWI and NDVI}
  
  \begin{image}
      \centering   
