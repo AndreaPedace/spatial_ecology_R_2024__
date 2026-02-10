@@ -91,6 +91,20 @@ plot(Bl2NDWI)
 plot(Bl3NDWI)
 dev.off()
 
+# NDVI difference pre and post-landslide using just one layer
+NDVI_diff <- Bl2NDVI[[1]] - Bl1NDVI[[1]]
+# NDWI difference pre and post-lanslide using just one layer
+NDWI_diff <-Bl2NDWI[[1]] - Bl1NDWI[[1]]
+#plotting results of the two differences
+par(mfrow=c(2,1))
+plot(NDWI_diff, main="Superficial water")
+plot(NDVI_diff, main="Debris condition")
+dev.off()
+
+#using the library imageRy it has been done an unsupervised classification (K-means method) in order to highlights category in the NDWI and NDVI differences
+ClassNDWI<-im.classify(NDWI_diff, num_clusters = 4)
+ClassNDVI<-im.classify(NDVI_diff, num_clusters = 4)
+
 #using the library imageRy it has been done an unsupervised classification (k-means method) in order to acquire possible new data on the first 3 images in true colors
 #the resulting clusters represent spectrally homogeneous groups of pixels and were used to evaluate changes in surface composition induced by the landslide.
 class1 <- im.classify(Bl1, num_clusters=4) #Image True color 18.05.25
@@ -105,11 +119,9 @@ plot(class3, main="20.09.25")
 dev.off()
 
 #calculation of number of pixels for each classes in each classifications
-
 #classification 1 frequency (number of pixels for each classes)
 freq1 <- freq(class1)
 freq1
-
 #class1 histogram the frequency
 barplot(freq1$count,
         names.arg = freq1$value,
@@ -121,7 +133,6 @@ barplot(freq1$count,
 #classification 2 frequency (number of pixels for each classes)
 freq2 <- freq(class2)
 freq2
-
 #class2 histogram of the frequency
 barplot(freq2$count,
         names.arg = freq2$value,
@@ -133,7 +144,6 @@ barplot(freq2$count,
 #classification 3 frequency (number of pixels for each classes)
 freq3 <- freq(class3)
 freq3
-
 #class3 histogram of the frequency
 barplot(freq3$count,
         names.arg = freq3$value,
@@ -141,4 +151,3 @@ barplot(freq3$count,
         main = "Class distribution – 20-09-2025",
         xlab = "Class",
         ylab = "Number of pixels")
-       
